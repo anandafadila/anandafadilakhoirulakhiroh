@@ -212,13 +212,15 @@ footer {
 /* Ubah ukuran saat di HP */
 @media (max-width: 768px) {
     .menu {
-        flex-wrap: wrap; /* Tetap sejajar di HP */
+        flex-wrap: nowrap; /* Mencegah tombol turun ke bawah */
+        justify-content: space-around; /* Membagi ruang antar tombol */
         padding: 5px;
-        gap: 5px;
+        gap: 3px; /* Lebih rapat */
     }
 
     .menu a {
-        padding: 8px 12px; /* Mengecilkan tombol */
-        font-size: 12px; /* Mengecilkan font */
+        padding: 6px 10px; /* Mengecilkan tombol lebih lanjut */
+        font-size: 9px; /* Mengecilkan font agar tetap muat */
     }
 }
+
