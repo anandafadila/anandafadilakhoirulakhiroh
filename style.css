@@ -176,5 +176,52 @@ footer {
     text-align: center;
 }
 
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
 
+    header h1 {
+        font-size: 20px;
+    }
 
+    nav {
+        flex-direction: column; /* Menu ditampilkan vertikal */
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu menjadi daftar vertikal */
+        padding: 0;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero img.profile-pic {
+        width: 120px; /* Ukuran lebih kecil agar proporsional */
+        height: 120px;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .project-container {
+        flex-direction: column; /* Biar kartu proyek nggak berantakan */
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
